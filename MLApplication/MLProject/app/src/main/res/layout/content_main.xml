@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main" tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/person"
+        android:layout_alignParentTop="true" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/person"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="85dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Standing"
+            android:onClick="setActivity"
+            android:id="@+id/standing" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sitting"
+            android:onClick="setActivity"
+            android:id="@+id/sitting" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Walking"
+            android:onClick="setActivity"
+            android:id="@+id/walking" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Running"
+            android:onClick="setActivity"
+            android:id="@+id/running" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jumping"
+            android:onClick="setActivity"
+            android:id="@+id/jumping"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stairs Up"
+            android:onClick="setActivity"
+            android:id="@+id/stairsUp"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stairs Down"
+            android:onClick="setActivity"
+            android:id="@+id/stairsDown"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lying Down"
+            android:id="@+id/lying"
+            android:onClick="setActivity"
+            android:checked="false" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:id="@+id/start"
+        android:layout_marginLeft="51dp"
+        android:layout_marginStart="51dp"
+        android:layout_below="@+id/person"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#45c525"
+        android:onClick="startRecording"
+        android:background="#f9f1f1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:id="@+id/stop"
+        android:onClick="stopRecording"
+        android:background="#f8efef"
+        android:textColor="#e41d1d"
+        android:layout_alignTop="@+id/start"
+        android:layout_toRightOf="@+id/start"
+        android:layout_toEndOf="@+id/start"
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp" />
+
+</RelativeLayout>

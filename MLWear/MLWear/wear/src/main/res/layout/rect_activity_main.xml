@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical"
+    tools:context=".MainActivity" tools:deviceIds="wear_square"
+    android:weightSum="1">
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stand"
+                android:onClick="setActivity"
+                android:id="@+id/radioButton3"
+                android:layout_gravity="right"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sit"
+                android:onClick="setActivity"
+                android:id="@+id/radioButton6"
+                android:layout_gravity="right"
+                android:checked="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Walk"
+                android:onClick="setActivity"
+                android:id="@+id/radioButton7"
+                android:layout_gravity="right"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Run"
+                android:onClick="setActivity"
+                android:id="@+id/radioButton8"
+                android:checked="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jump"
+                android:onClick="setActivity"
+                android:id="@+id/radioButton4"
+                android:layout_gravity="right"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Up"
+                android:onClick="setActivity"
+                android:id="@+id/radioButton5"
+                android:layout_gravity="right"
+                android:checked="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Down"
+                android:onClick="setActivity"
+                android:id="@+id/radioButton9"
+                android:layout_gravity="right"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lie"
+                android:onClick="setActivity"
+                android:id="@+id/radioButton10"
+                android:checked="false" />
+
+        </LinearLayout>
+    </RadioGroup>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="START"
+            android:onClick="startRecording"
+            android:id="@+id/start" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STOP"
+            android:onClick="stopRecording"
+            android:id="@+id/stop" />
+
+    </LinearLayout>
+
+</LinearLayout>
